@@ -11,7 +11,7 @@ public class MockExample {
         WireMockServer wireMockServer = new WireMockServer(8080);
         wireMockServer.start();
 
-        //
+
         wireMockServer.stubFor(get(urlEqualTo("/user/get/1"))
                 .willReturn(aResponse().withStatus(200)));
 

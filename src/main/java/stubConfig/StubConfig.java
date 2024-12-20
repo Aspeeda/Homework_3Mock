@@ -28,7 +28,6 @@ public class StubConfig {
                         .withHeader("Content-Type", "application/json")
                         .withBody("[{\"name\":\"Test user\",\"cource\":\"QA\",\"email\":\"test@test.test\",\"age\":23}]")));
 
-
         //для soap
         List<String> lines = Files.readAllLines(Paths.get("src/main/resources/soap/User.xml"));
         String soapResponse = String.join("\n", lines);

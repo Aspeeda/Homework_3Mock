@@ -38,8 +38,6 @@ public class StubServerTest extends BaseTest {
 
         verify((getRequestedFor(urlEqualTo("/cource/get/all"))));
         System.out.println("проверка пройдена");
-
-
     }
 
     @Test
@@ -57,6 +55,5 @@ public class StubServerTest extends BaseTest {
 
         verify((getRequestedFor(urlEqualTo("/user/get/1"))));
         System.out.println("проверка пройдена");
-
     }
 }
